@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "797284083234",
+    "firebase_url": "https://formapplication-bbd87.firebaseio.com",
+    "project_id": "formapplication-bbd87",
+    "storage_bucket": "formapplication-bbd87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797284083234:android:8ce0e561fd0def92440c7b",
+        "android_client_info": {
+          "package_name": "com.example.FireBaseForm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797284083234-9hrtqme5k0b0ti664eplmonp9ovdl5ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmMEidLKYNz2ZjYmCw5nnSR2YRO4w5xQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797284083234-9hrtqme5k0b0ti664eplmonp9ovdl5ho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

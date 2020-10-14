@@ -34,7 +34,7 @@ class _OgretmenPageState extends State<OgretmenPage> {
     return Scaffold(
       floatingActionButton: savedButton(),
       key: _snackBar,
-      resizeToAvoidBottomInset: false,
+      //resizeToAvoidBottomInset: false,
       appBar: getAppBar("Ogretmen Kayıt Sayfası"),
       body: getBodyContainer(_formKey, ctfList, tfList),
     );

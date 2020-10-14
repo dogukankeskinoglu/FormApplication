@@ -2,9 +2,11 @@ import 'package:FireBaseForm/object_class/student.dart';
 import 'package:FireBaseForm/object_class/teacher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+
 class DbSingleton {
   static final DbSingleton _dbsingleton = DbSingleton._internal();
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  
   List<String> hintListTeacher = [];
   List<String> hintListStudent = [];
   List<String> iconListTeacher = [];
@@ -19,6 +21,8 @@ class DbSingleton {
   }
 
   DbSingleton._internal();
+
+ 
 
   void getHintTextInfo() async {
     DocumentSnapshot hintSnapShotTeacher =
@@ -36,7 +40,7 @@ class DbSingleton {
     }
     for (String hintText in mapDataStudent["Liste"]) {
       hintListStudent.add(hintText);
-      print(hintText);
+      //print(hintText);
     }
   }
 
@@ -57,7 +61,7 @@ class DbSingleton {
 
     for (String iconText in mapDataStudent["Liste"]) {
       iconListStudent.add(iconText);
-      print(iconText);
+      //print(iconText);
     }
   }
 
@@ -78,7 +82,7 @@ class DbSingleton {
     }
     for (bool keyboardBool in mapDataStudent["Liste"]) {
       keyboardListStudent.add(keyboardBool);
-      print(keyboardBool.toString());
+      //print(keyboardBool.toString());
     }
   }
 
@@ -101,14 +105,14 @@ class DbSingleton {
     }
     for (int validatorNumber in mapDataStudent["Liste"]) {
       validatorNumberListStudent.add(validatorNumber);
-      print(validatorNumber.toString());
+      //print(validatorNumber.toString());
     }
   }
 
   void addStudent(ctfList) {
-    for (int i = 0; i < 8; i++) {
+    /*for (int i = 0; i < 8; i++) {
       print(ctfList[i].controller.text.toString());
-    }
+    }*/
     Student ogr = new Student(
       "Student",
       ctfList[0].controller.text,
@@ -129,9 +133,9 @@ class DbSingleton {
   }
 
   void addTeacher(ctfList) {
-    for (int i = 0; i < 8; i++) {
+    /*for (int i = 0; i < 8; i++) {
       print(ctfList[i].controller.text.toString());
-    }
+    }*/
     Ogretmen ogr = new Ogretmen(
         "Teacher",
         ctfList[0].controller.text,

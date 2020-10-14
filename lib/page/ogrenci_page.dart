@@ -33,7 +33,7 @@ class _OgrenciPageState extends State<OgrenciPage> {
     return Scaffold(
       floatingActionButton: savedButton(),
       key: _snackBar,
-      resizeToAvoidBottomInset: false,
+      //resizeToAvoidBottomInset: false,
       appBar: getAppBar("Öğrenci Kayıt Sayfası"),
       body: getBodyContainer(_formKey, ctfList, tfList),
     );

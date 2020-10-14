@@ -1,7 +1,8 @@
 import 'package:FireBaseForm/controller/controller.dart';
+import 'package:FireBaseForm/object_class/textFormFieldGeneral.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextFormField {
+class CustomTextFormField extends TextFormFieldGeneral {
   String hintText;
   String labelText;
   TextEditingController controller;
@@ -10,7 +11,8 @@ class CustomTextFormField {
   int validatorNumber;
 
   CustomTextFormField(this.hintText, this.labelText, this.controller, this.icon,
-      this.isKeyBoardString, this.validatorNumber);
+      this.isKeyBoardString, this.validatorNumber)
+      : super(hintText, labelText, controller);
 
   getTextFormField() {
     return Padding(
@@ -33,7 +35,6 @@ class CustomTextFormField {
 
   @override
   String toString() {
-    
     return "HinText$hintText labelText$labelText isKeyBoard${isKeyBoardString.toString()} validatorNumber$validatorNumber";
   }
 }
